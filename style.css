@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.search {
+  height: 50vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(55deg, #ff0000,#000000);
+}
+.search::before {
+  content: "";
+  z-index: 1;
+  background: rgba(201, 199, 199, 0.014);
+}
+.search .content {
+  z-index: 7;
+  color: #fff;
+  padding: 0 13px;
+  text-align: center;
+  position: relative;
+}
+.search h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+  color: #ffffff;
+  -webkit-text-stroke: 1px rgb(39, 1, 1)
+}
+.search p {
+  object-fit: cover;
+  margin-top: 8px;
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+.search .search-box {
+  height: 55px;
+  margin: 45px 0;
+  position: relative;
+}
+.search-box  i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  cursor: default;
+  color: #000000;
+  font-size: 2rem;
+  transform: translateY(-50%);
+}
+.search-box  input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  padding-left: 55px;
+  background: #fff;
+  border-radius: 5px;
+}
+.search-box input::placeholder {
+  color: #000000;
+}
+.search-box input:focus::placeholder {
+  color: #bfbfbf;
+}
+
+.content button {
+  background-color: #000000; 
+  color: #ffffff; 
+  border: 1px solid #ffffff; 
+  border-radius: 5px;
+  padding: 10px 20px; 
+  font-size: 13px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+.content button:hover {
+  background-color: #ffffff;
+  color: #000000; 
+  border: 2px solid #000000; 
+}
+.content button:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); 
+}
+.content button:active {
+  background-color: #00fff2; 
+  color: #000000; 
+}
+
+
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #333333;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+main p {
+  line-height: 1.6;
+  color: #666666;
+}
+
+h2 {
+  color: #333333;
+  margin-top: 20px;
+}
+
+ul, ol {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+}
+
+ul li strong, ol li strong {
+  color: #333333;
+}
+
+
+/*----------------------------------------------------------------Download.html-----------------------------------------------------------------------*/
+
+.download {
+  height: 60vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(55deg, #ff00b3,#000000);
+}
+.download .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 100px;
+}
+.download .content h1 {
+  object-fit: cover;
+  margin-top: 8px;
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.download .content img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download .content img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.download .d_buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 100px;
+}
+
+.download .d_buttons .btn-primary {
+  background-color: #000000; 
+  color: #ffffff; 
+  border: 1px solid #ffffff; 
+  border-radius: 5px;
+  padding: 10px 20px; 
+  font-size: 13px; 
+  margin-bottom: 20px;
+  font-weight: bold; 
+  text-transform: uppercase; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+.download .d_buttons .btn-primary:hover {
+  background-color: #ffffff;
+  color: #000000; 
+  border: 2px solid #000000; 
+}
+.download .d_buttons .btn-primary:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); 
+}
+.download .d_buttons .btn-primary:active {
+  background-color: #00fff2; 
+  color: #000000; 
+}
+
+.download .d_buttons .btn_2 {
+  background-color: #000000; 
+  color: #ffffff; 
+  border: 1px solid #ffffff; 
+  border-radius: 5px;
+  padding: 10px 20px; 
+  font-size: 13px;
+  margin-bottom: 20px;
+  font-weight: bold; 
+  text-transform: uppercase; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+.download .d_buttons .btn_2:hover {
+  background-color: #ffffff;
+  color: #000000; 
+  border: 2px solid #000000; 
+}
+.download .d_buttons .btn_2:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); 
+}
+.download .d_buttons .btn_2:active {
+  background-color: #00fff2; 
+  color: #000000; 
+}
+
+.download .d_buttons .btn_3 {
+  background-color: #000000; 
+  color: #ffffff; 
+  border: 1px solid #ffffff; 
+  border-radius: 5px;
+  padding: 10px 20px; 
+  font-size: 13px;
+  margin-bottom: 20px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+.download .d_buttons .btn_3:hover {
+  background-color: #ffffff;
+  color: #000000; 
+  border: 2px solid #000000; 
+}
+.download .d_buttons .btn_3:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); 
+}
+.download .d_buttons .btn_3:active {
+  background-color: #00fff2; 
+  color: #000000; 
+}
+
+
+/*--------------footer----------------*/
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.container .row{
+  display: flex;
+  margin: auto;
+}
+.footer{
+  background-color: #000;
+  padding: 100px 0;
+
+}
+.footer-col{
+  width: 50%;
+  padding: 0 20px;
+
+}
+.footer-col h4{
+  font-size: 20px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgb(119, 119, 119);
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffffff;
+  padding-left: 8px;
+
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #00eeff;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgb(255, 244, 244);
+  transition: all 0.5s ease;
+
+}
+.footer-col .social-links a{
+  color: #00eeff;
+  background-color: rgb(65, 61, 61);
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .search {
+    height: 60vh;
+  }
+
+  .search h1 {
+    font-size: 3rem;
+  }
+
+  .search p {
+    font-size: 1.2rem;
+  }
+
+  .search-box input {
+    font-size: 1.2rem;
+    padding-left: 45px;
+  }
+
+  .search-box i {
+    font-size: 1.5rem;
+  }
+
+  .content button {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+
+  main p {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  ul li, ol li {
+    font-size: 0.9rem;
+  }
+}
