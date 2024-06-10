@@ -2,7 +2,7 @@
 function handleDownload() {
   const url = document.getElementById('url').value;
   if (url) {
-      window.location.href = `download.html?url=${encodeURIComponent(url)}`;
+      window.location.href = `Download.html?url=${encodeURIComponent(url)}`;
   } else {
       alert("Please enter a valid TikTok URL.");
   }
