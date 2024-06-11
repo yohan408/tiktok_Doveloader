@@ -59,7 +59,7 @@ function downloadVideo() {
         const downloadUrl = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = downloadUrl;
-        a.download = 'download.mp4';
+        a.download = 'TikYRSave{i}.mp4';
         a.click();
     };
     xhr.send();
